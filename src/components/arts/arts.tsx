@@ -21,7 +21,7 @@ export default function WeeklyArts() {
         <div className="grid gap-8 md:grid-cols-3">
           {artworks.map((art) => (
             <div key={art.id} className="space-y-2 bg-transparent">
-              <div className="relative">
+              <div className="relative border border-zinc-50/20">
                 <img
                   src={art.image}
                   alt={art.title}

@@ -6,13 +6,13 @@ import { team } from "../constants";
 export default function MeetTeam() {
   return (
     <section className="overflow-hidden bg-team px-8 py-28">
-      <div className="mx-auto grid max-w-7xl items-center gap-20 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-2">
         <div className="space-y-6">
           <h2 className="text-6xl leading-tight font-semibold text-white">
             Meet the Team
           </h2>
 
-          <p className="max-w-md text-xl leading-relaxed text-gray-300">
+          <p className="max-w-md text-2xl leading-normal font-light text-gray-300">
             The Creators Who Are Pushing the Boundaries of Art and Technology
           </p>
         </div>

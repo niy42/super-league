@@ -34,8 +34,9 @@ export default function ExtricatorHero() {
             <br />a Piece of History
           </h1>
 
-          <p className="relative mx-auto mt-6 max-w-2xl text-lg text-gray-400">
-            Join the Ranks of Visionary Collectors and Own a Piece of History
+          <p className="relative mx-auto mt-2 max-w-2xl text-3xl leading-normal font-light text-gray-400">
+            Join the Ranks of Visionary Collectors and Own a <br /> Piece of
+            History
           </p>
 
           <div className="relative mt-8 flex justify-center gap-4">
