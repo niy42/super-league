@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-superleague: #2b0006;
+  --color-love: #f0075a;
+  --color-team: #190109;
+  --color-early-signup: #3a0006;
+  --color-get-alpha: #5012b3;
+  --color-footer: #3b0007;
+  --color-art: #4b3537;
+}
