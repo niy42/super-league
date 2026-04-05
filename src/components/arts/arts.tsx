@@ -11,7 +11,7 @@ export default function WeeklyArts() {
             Amazing and Unique <br /> Arts for the week
           </h2>
 
-          <button className="self-start rounded-md bg-purple-600 px-6 py-2 text-sm font-medium text-white transition hover:bg-purple-700 sm:self-auto">
+          <button className="cursor-pointer self-start rounded-xs bg-purple-600 px-6 py-2 text-sm font-medium text-white transition hover:bg-purple-700 sm:self-auto">
             See all →
           </button>
         </div>
@@ -21,7 +21,7 @@ export default function WeeklyArts() {
           {artworks.map((art) => (
             <div key={art.id} className="space-y-2">
               {/* Image Card */}
-              <div className="relative overflow-hidden rounded-md border border-zinc-50/20">
+              <div className="relative overflow-hidden rounded-xs border border-zinc-50/20">
                 <img
                   src={art.image}
                   alt={art.title}
@@ -37,7 +37,7 @@ export default function WeeklyArts() {
               </div>
 
               {/* Info & Buy Button */}
-              <div className="flex flex-col items-start justify-between rounded-md bg-art px-4 py-3 sm:flex-row sm:items-center">
+              <div className="flex flex-col items-start justify-between rounded-xs bg-art px-4 py-3 sm:flex-row sm:items-center">
                 <div className="mb-2 sm:mb-0">
                   <p className="text-sm text-gray-300">{art.title}</p>
                   <p className="text-lg text-white">{art.price}</p>
