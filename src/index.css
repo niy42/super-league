@@ -9,3 +9,47 @@
   --color-footer: #3b0007;
   --color-art: #4b3537;
 }
+
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  height: 100vh;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: slide-in 0.4s ease-out forwards;
+}
+
+.mobile-menu.slide-out {
+  animation: slide-out 0.4s ease-out forwards;
+}
