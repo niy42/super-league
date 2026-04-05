@@ -48,7 +48,7 @@ export default function ExtricatorHero() {
 
           {toggleMenu && (
             <ul
-              className={`mobile-menu white-glassmorphism fixed top-0 right-0 z-20 flex h-screen w-[70vw] list-none flex-col items-end justify-start rounded-l-md bg-black/90 p-9 text-white shadow-2xl ${closing ? "slide-out" : "slide-in"}`}
+              className={`mobile-menu white-glassmorphism fixed top-0 right-0 z-20 flex h-screen w-[70vw] list-none flex-col items-end justify-start rounded-l-md p-9 text-white shadow-2xl ${closing ? "slide-out" : ""}`}
             >
               <li className="mt-1 mb-9 w-full text-xl">
                 <X size={28} className="cursor-pointer" onClick={handleClose} />
@@ -68,7 +68,6 @@ export default function ExtricatorHero() {
       </nav>
 
       <section className="relative mt-16 flex flex-col items-center justify-center gap-6 overflow-hidden px-4 text-center sm:mt-20 sm:gap-8">
-        {/* Background overlays */}
         <div className="absolute inset-0 z-1 bg-linear-to-b from-superleague via-transparent to-transparent" />
         <div className="pointer-events-none absolute inset-0 flex justify-center">
           <div className="h-80 w-80 bg-[radial-gradient(circle,rgba(236,72,153,0.25)_0%,rgba(236,72,153,0.1)_40%,transparent_70%)] blur-3xl sm:h-125 sm:w-225" />
@@ -77,8 +76,6 @@ export default function ExtricatorHero() {
         <div className="relative z-10 w-full">
           <div className="pointer-events-none absolute inset-0 z-0 h-full w-full bg-[linear-gradient(#ffffff0f_3px,transparent_4px),linear-gradient(90deg,#ffffff0f_3px,transparent_4px)] mask-[radial-gradient(ellipse_50%_70%_at_50%_52%,#000_40%,transparent_70%)] bg-size-[40px_40px]" />
           <div className="absolute top-20 left-1/2 h-56 w-md -translate-x-1/2 bg-[radial-gradient(circle,rgba(236,72,153,0.35)_0%,rgba(236,72,153,0.15)_40%,transparent_70%)] opacity-80 blur-3xl sm:top-24 sm:h-87.5 sm:w-175" />
-
-          {/* Heading */}
           <h1 className="relative mx-auto max-w-xl text-3xl leading-snug font-semibold text-white sm:max-w-4xl sm:text-5xl sm:leading-tight md:text-6xl">
             Get Ready to Own
             <br />a Piece of History
