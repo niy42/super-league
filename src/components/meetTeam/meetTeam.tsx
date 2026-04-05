@@ -7,7 +7,6 @@ export default function MeetTeam() {
   return (
     <section className="overflow-hidden bg-team px-4 py-16 sm:px-8 sm:py-28 lg:px-8">
       <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-2">
-        {/* Heading & Description */}
         <div className="space-y-4 sm:space-y-6">
           <h2 className="text-3xl leading-snug font-semibold text-white sm:text-5xl md:text-6xl">
             Meet the Team
@@ -17,8 +16,6 @@ export default function MeetTeam() {
             The Creators Who Are Pushing the Boundaries of Art and Technology
           </p>
         </div>
-
-        {/* Team Members Grid */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
           {team.map((member, index) => (
             <div
@@ -34,10 +31,7 @@ export default function MeetTeam() {
                 />
               </div>
 
-              {/* Gradient overlay */}
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
-
-              {/* Social buttons */}
               <div className="absolute bottom-20 left-1/2 flex -translate-x-1/2 translate-y-4 gap-3 opacity-100 transition duration-500 sm:bottom-24 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100">
                 <button className="cursor-pointer rounded-full border border-white/20 bg-white/10 p-2 text-white backdrop-blur-lg transition hover:bg-white/20">
                   <Discord width={16} height={16} />
@@ -51,8 +45,6 @@ export default function MeetTeam() {
                   <Send size={16} />
                 </button>
               </div>
-
-              {/* Name & Role */}
               <div className="absolute right-0 bottom-6 left-0 text-center">
                 <h3 className="text-lg font-semibold text-white sm:text-xl">
                   {member.name}

@@ -30,7 +30,6 @@ export default function Stats() {
 
   return (
     <section className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-4 py-20 sm:gap-20 sm:px-8 sm:py-32 lg:grid-cols-2">
-      {/* Left Column */}
       <div className="grid place-items-start gap-4">
         <p className="text-sm text-pink-500">Track record</p>
 
@@ -42,8 +41,6 @@ export default function Stats() {
           Achieved
         </h2>
       </div>
-
-      {/* Right Column */}
       <div className="grid place-items-start gap-8 sm:gap-10">
         <p className="max-w-full text-sm text-gray-400 sm:max-w-lg sm:text-base">
           Not only do our exclusive NFTs offer a unique opportunity for digital
@@ -51,8 +48,6 @@ export default function Stats() {
           creativity and connect with a community of like-minded collectors and
           enthusiasts.
         </p>
-
-        {/* Stats Grid with animated numbers */}
         <div className="grid grid-cols-1 gap-6 text-center sm:grid-cols-3 sm:gap-14">
           {stats.map((stat, i) => (
             <div key={i}>
@@ -63,8 +58,6 @@ export default function Stats() {
             </div>
           ))}
         </div>
-
-        {/* Button */}
         <button className="w-full cursor-pointer rounded-md border border-white/20 px-6 py-3 text-center hover:bg-white/10 sm:w-auto sm:px-8">
           See Track records
         </button>

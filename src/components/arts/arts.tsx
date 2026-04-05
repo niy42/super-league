@@ -5,7 +5,6 @@ export default function WeeklyArts() {
   return (
     <section className="px-4 py-12 sm:px-8 sm:py-16">
       <div className="mx-auto max-w-7xl">
-        {/* Header */}
         <div className="mb-8 flex flex-col items-start justify-between gap-4 sm:mb-12 sm:flex-row sm:items-center">
           <h2 className="max-w-xl text-3xl leading-snug font-medium text-white sm:text-5xl sm:leading-tight md:text-6xl">
             Amazing and Unique <br /> Arts for the week
@@ -15,12 +14,9 @@ export default function WeeklyArts() {
             See all →
           </button>
         </div>
-
-        {/* Artworks Grid */}
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {artworks.map((art) => (
             <div key={art.id} className="space-y-2">
-              {/* Image Card */}
               <div className="relative overflow-hidden rounded-xs border border-zinc-50/20">
                 <img
                   src={art.image}
@@ -36,7 +32,6 @@ export default function WeeklyArts() {
                 </div>
               </div>
 
-              {/* Info & Buy Button */}
               <div className="flex flex-col items-start justify-between rounded-xs bg-art px-4 py-3 sm:flex-row sm:items-center">
                 <div className="mb-2 sm:mb-0">
                   <p className="text-sm text-gray-300">{art.title}</p>

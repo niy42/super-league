@@ -18,12 +18,8 @@ export default function ExtricatorHero() {
 
   return (
     <>
-      {/* Navigation */}
       <nav className="relative mx-auto flex w-full max-w-7xl items-start justify-between gap-4 px-4 py-4 sm:flex-row sm:items-center sm:gap-0 sm:px-12 sm:py-6">
-        {/* Logo */}
         <h1 className="text-xl font-semibold text-white">Extricator.</h1>
-
-        {/* Desktop Menu */}
         <div className="hidden gap-10 text-gray-300 sm:flex">
           {menuItems.map((item, i) => (
             <a
@@ -35,8 +31,6 @@ export default function ExtricatorHero() {
             </a>
           ))}
         </div>
-
-        {/* Mobile Menu Toggle */}
         <div className="relative flex sm:hidden">
           {toggleMenu ? (
             <X
@@ -52,7 +46,6 @@ export default function ExtricatorHero() {
             />
           )}
 
-          {/* Slide-out Mobile Menu */}
           {toggleMenu && (
             <ul
               className={`mobile-menu white-glassmorphism fixed top-0 right-0 z-20 flex h-screen w-[70vw] list-none flex-col items-end justify-start rounded-l-md bg-black/90 p-9 text-white shadow-2xl ${closing ? "slide-out" : "slide-in"}`}
@@ -74,7 +67,6 @@ export default function ExtricatorHero() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section className="relative mt-16 flex flex-col items-center justify-center gap-6 overflow-hidden px-4 text-center sm:mt-20 sm:gap-8">
         {/* Background overlays */}
         <div className="absolute inset-0 z-1 bg-linear-to-b from-superleague via-transparent to-transparent" />
@@ -92,14 +84,12 @@ export default function ExtricatorHero() {
             <br />a Piece of History
           </h1>
 
-          {/* Description */}
           <p className="relative mx-auto mt-2 max-w-md text-lg leading-normal font-light text-gray-400 sm:max-w-2xl sm:text-3xl">
             Join the Ranks of Visionary Collectors and Own a{" "}
             <br className="hidden sm:block" />
             Piece of History
           </p>
 
-          {/* Buttons */}
           <div className="relative mt-6 flex w-full flex-col justify-center gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:gap-4">
             <button className="w-full cursor-pointer rounded-md bg-purple-600 px-10 py-3 hover:bg-purple-700 sm:w-auto sm:px-14 sm:py-3">
               Explore
@@ -111,7 +101,6 @@ export default function ExtricatorHero() {
           </div>
         </div>
 
-        {/* NFT Image */}
         <NFTCards className="relative z-10 h-auto w-full max-w-sm max-sm:mt-4 sm:max-w-7xl" />
       </section>
     </>
