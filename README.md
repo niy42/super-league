@@ -13,6 +13,7 @@ This project focuses on pixel-perfect UI implementation based on a Figma design,
 - Curved gradient beam for hero section
 - SVG-based hero illustration
 - Fast build with Vite
+- Mobile responsive
 
 ---
 
