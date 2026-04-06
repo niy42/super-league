@@ -1,20 +1,18 @@
-import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import NFTCards from "../../assets/svg/nft-cards.svg?react";
 
-export default function ExtricatorHero() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-
+export default function ExtricatorHero({
+  closing,
+  toggleMenu,
+  setToggleMenu,
+  handleClose,
+}: {
+  closing: boolean;
+  toggleMenu: boolean;
+  setToggleMenu: React.Dispatch<React.SetStateAction<boolean>>;
+  handleClose: () => void;
+}) {
   const menuItems = ["Home", "Gallery", "Roadmap"];
-  const [closing, setClosing] = useState(false);
-
-  const handleClose = () => {
-    setClosing(true);
-    setTimeout(() => {
-      setToggleMenu(false);
-      setClosing(false);
-    }, 400);
-  };
 
   return (
     <>
@@ -67,7 +65,10 @@ export default function ExtricatorHero() {
         </div>
       </nav>
 
-      <section className="relative mt-16 flex flex-col items-center justify-center gap-6 overflow-hidden px-4 text-center sm:mt-20 sm:gap-8">
+      <section
+        className="relative mt-16 flex flex-col items-center justify-center gap-6 overflow-hidden px-4 text-center sm:mt-20 sm:gap-8"
+        onClick={handleClose}
+      >
         <div className="absolute inset-0 z-1 bg-linear-to-b from-superleague via-transparent to-transparent" />
         <div className="pointer-events-none absolute inset-0 flex justify-center">
           <div className="h-80 w-80 bg-[radial-gradient(circle,rgba(236,72,153,0.25)_0%,rgba(236,72,153,0.1)_40%,transparent_70%)] blur-3xl sm:h-125 sm:w-225" />
