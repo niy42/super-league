@@ -48,7 +48,7 @@ export default function ExtricatorHero() {
 
           {toggleMenu && (
             <ul
-              className={`mobile-menu fixed top-0 right-0 z-20 flex h-screen w-[70vw] flex-col items-end justify-start rounded-l-2xl border-l border-white/20 bg-linear-to-br from-white/20 to-white/5 p-9 text-white shadow-2xl backdrop-blur-xl ${closing ? "slide-out" : ""}`}
+              className={`mobile-menu white-glassmorphism fixed top-0 right-0 z-20 flex h-screen w-[70vw] flex-col items-end justify-start rounded-l-2xl border-l border-white/20 bg-linear-to-br from-white/20 to-white/5 p-9 text-white shadow-2xl backdrop-blur-xl ${closing ? "slide-out" : ""}`}
             >
               <li className="mt-1 mb-9 w-full text-xl">
                 <X size={28} className="cursor-pointer" onClick={handleClose} />
