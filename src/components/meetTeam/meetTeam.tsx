@@ -22,7 +22,6 @@ export default function MeetTeam() {
               key={index}
               className="group relative overflow-hidden rounded-xl border border-white/10 bg-black/30 backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-lg sm:hover:-translate-y-2 sm:hover:shadow-2xl"
             >
-              {/* Image */}
               <div className="overflow-hidden">
                 <img
                   src={member.image}
@@ -32,7 +31,7 @@ export default function MeetTeam() {
               </div>
 
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
-              <div className="absolute bottom-20 left-1/2 flex -translate-x-1/2 translate-y-4 gap-3 opacity-100 transition duration-500 sm:bottom-24 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100">
+              <div className="absolute bottom-20 left-1/2 flex -translate-x-1/2 translate-y-4 gap-3 opacity-100 transition duration-500 max-sm:mb-1 sm:bottom-24 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100">
                 <button className="cursor-pointer rounded-full border border-white/20 bg-white/10 p-2 text-white backdrop-blur-lg transition hover:bg-white/20">
                   <Discord width={16} height={16} />
                 </button>
